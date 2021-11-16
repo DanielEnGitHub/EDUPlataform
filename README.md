@@ -52,6 +52,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [Django](https://www.djangoproject.com/) - El framework web usado
 * [Boostrap](https://getbootstrap.com/) - Libreria usada para maquetación web
 * [Postgresql](https://www.postgresql.org/) - Usado para gestion de base de datos
+* Python 3.9.7
 
 ## Autores ✒️
 
