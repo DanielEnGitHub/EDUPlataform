@@ -11,6 +11,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
+Python 3.9.7
 Django==3.1
 psycopg2==2.9.2
 django-widget-tweaks==1.4.9
@@ -52,7 +53,6 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [Django](https://www.djangoproject.com/) - El framework web usado
 * [Boostrap](https://getbootstrap.com/) - Libreria usada para maquetación web
 * [Postgresql](https://www.postgresql.org/) - Usado para gestion de base de datos
-* Python 3.9.7
 
 ## Autores ✒️
 
