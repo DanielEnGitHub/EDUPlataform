@@ -1,0 +1,63 @@
+/*!
+
+ =========================================================
+ * Material Kit - v2.0.7
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+/*     brand Colors              */
+
+/* Hover */
+.nav-pills .nav-item .nav-link:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+/* Hover */
+
+/*Iconos*/
+.icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+}
+
+
+/* Activo */
+.nav-pills .nav-item .nav-link.active {
+  color: #ffffff;
+  background-color: #007BFF;
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px #007BFF;
+}
+/* Activo*/
+
+/* Forma */
+.nav-pills .nav-item i {
+  display: block;
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+.nav-pills .nav-item .nav-link {
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  color: #A4A4A4;;
+  transition: all .3s;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+.nav-pills.nav-pills-icons .nav-item .nav-link {
+  border-radius: 4px;
+}
+/* Forma */

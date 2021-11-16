@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill9/dist/polyfill.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  	<script src="sweetalert2.all.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  	<script src="{% static 'js/alert.js' %}"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>LISTA DE REGISTROS</h1>
+  <table border="2">
+      <tr>
+        <th>ID</th>
+        <th>CARNET</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>DPI</th>
+        <th>JORNADA</th>
+        <th>ESPECIALIDAD</th>
+        <th>GENERO</th>
+        <th>FECHA NACIMIENTO</th>
+        <th>TELEFONO</th>
+        <th>OPCIONES</th>
+      </tr>
+      {% for cont in profesor %}
+        <tr>
+          <td>{{ cont.id_profesores }}</td>
+          <td>{{ cont.carnet }}</td>
+          <td>{{ cont.nombre }}</td>
+          <td>{{ cont.apellido }}</td>
+          <td>{{ cont.dpi }}</td>
+          <td>{{ cont.jornada }}</td>
+          <td>{{ cont.especialidad }}</td>
+          <td>{{ cont.genero }}</td>
+          <td>{{ cont.fecha_nacimiento }}</td>
+          <td>{{ cont.telefono }}</td>
+          <td> <a href="{% url 'modificarProfesores' cont.id_profesores %}"> <button type="submit" class="stb">MODIFICAR</button></a> </td>
+          <td> <a href="{% url 'eliminarProfesores' cont.id_profesores %}"> <button type="submit" class="stb">ELIMINAR</button></a> </td>
+        </tr>
+      {% endfor %}
+  </table>
+  <br>
+  <a href="/logout"><button type="submit" class="csb">CERRAR SESION</button></a><br><br>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+apps/__pycache__/
+EDUPlataform/__pycache__/
+apps/edu/__pycache__/
+apps/edu/migrations/__pycache__/
+!apps/edu/migrations/__init__.py

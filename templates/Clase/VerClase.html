@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill9/dist/polyfill.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  	<script src="sweetalert2.all.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  	<script src="{% static 'js/alert.js' %}"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>VER SECCIONES</h1>
+  <table border="2">
+      <tr>
+        <th>ID secciones</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>OPCIONES</th>
+      </tr>
+      {% for cont in clase %}
+        <tr>
+          <td>{{ cont.id_clases }}</td>
+          <td>{{ cont.fk_profesor }}</td>
+          <td>{{ cont.fk_materia }}</td>
+          <td> <a href="{% url 'modificarClase' cont.id_clases %}"> <button type="submit" class="stb">MODIFICAR</button></a> </td>
+          <td> <a href="{% url 'eliminarClase' cont.id_clases %}"> <button type="submit" class="stb">ELIMINAR</button></a> </td>
+        </tr>
+      {% endfor %}
+  </table>
+  <br>
+  <a href="/logout"><button type="submit" class="csb">CERRAR SESION</button></a><br><br>
+  </body>
+</html>
